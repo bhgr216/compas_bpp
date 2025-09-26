@@ -3,7 +3,7 @@
 Converts COMPAS regular output files into the same format as a COSMIC `bpp` table.
 
 ## Features
-* Extract different binary stellar evolution events from a COMPAS regular output HDF5 file, storing them in a `bpp` DataFrame
+* Extract different binary stellar evolution events from a COMPAS regular output HDF5 file, storing them in a COSMIC style `bpp` DataFrame
 * Generate cartoon plots from a COMPAS regular output file using [cogsworth](https://github.com/TomWagg/cogsworth)
 
 ## Instructions
@@ -13,12 +13,13 @@ Converts COMPAS regular output files into the same format as a COSMIC `bpp` tabl
 
 ## Functions
 * `initial(compas_output)`, `rlof(compas_output)`, `supernovae(compas_output)`, `stc(compas_output)`
+    * `compas_output`: a file path to a COMPAS output file
     * Generate a `bpp` with one of the following event types: initial state, RLOF, supernovae, or stellar type changes
-    * Takes in a file path to a COMPAS output file
     * Returns a `bpp` DataFrame
 * `generate_full_bpp(compas_output)`
+    * `compas_output`: a file path to a COMPAS output file
     * Generates a `bpp` with all of the event types listed above
 * `generate_cartoon_plot(compas_output, seed)`
     * `compas_output`: file path to a COMPAS output file
-    * `seed`: integer seed to generate a cartoon plot of
+    * `seed`: integer seed from which to generate a cartoon plot
     * Generates a cartoon plot for a given seed from COMPAS output using `cogsworth`
