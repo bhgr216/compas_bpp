@@ -1,0 +1,5 @@
+bseflow @ git+https://github.com/ana-lam/bseflow@main
+pandas
+numpy
+cogsworth
+astropy

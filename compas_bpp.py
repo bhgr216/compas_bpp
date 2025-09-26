@@ -151,5 +151,3 @@ def generate_cartoon_plot(compas_output, seed):
     bpp = generate_full_bpp(compas_output)
     num = bpp.index[bpp["SEED"] == seed][0]
     cogsworth.plot.plot_cartoon_evolution(bpp, bin_num=num)
-
-generate_cartoon_plot("./COMPAS/src/COMPAS_Output/COMPAS_Output.h5", 1751966276)

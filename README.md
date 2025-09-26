@@ -7,7 +7,9 @@ Converts COMPAS regular output files into the same format as a COSMIC `bpp` tabl
 * Generate cartoon plots from a COMPAS regular output file using [cogsworth](https://github.com/TomWagg/cogsworth)
 
 ## Instructions
-* Move `compas_bpp.py` to your project directory to use functions
+* Move `requirements.txt` and `compas_bpp.py` to your project directory
+* Install the required packages to your project's environment: `pip install -r requirements.txt`
+* Import compas_bpp and use the functions (Jupyter notebook is recommended)
 
 ## Functions
 * `initial(compas_output)`, `rlof(compas_output)`, `supernovae(compas_output)`, `stc(compas_output)`
